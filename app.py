@@ -12,7 +12,7 @@ app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
 
-@app.route("/", methods = ['POST','GET'])
+@app.route("/", methods = ['POST'])
 def index():
     client = request.form['clientname']
     service1 = request.form.get('servicelist')
