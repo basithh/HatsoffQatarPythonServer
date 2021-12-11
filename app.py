@@ -63,7 +63,7 @@ background: #f0f5f9;">
                             <h3 >Email</h3>
                         </td>
                         <td>
-                            <h3 style="font-weight:100 ;"><a href="mailto:{email}"></a>{email}</h3>
+                            <h3 style="font-weight:100 ;"><a href="mailto:{email}?subject=Regarding your query on {service}"></a>{email}</h3>
                         </td>
                     </tr>
                     <tr>
