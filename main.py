@@ -98,7 +98,5 @@ background: #f0f5f9;">
 @app.route('/new')
 def new():
     return "working"
-if __name__ == '__main__':
-    app.run()
 
 
