@@ -100,3 +100,5 @@ def new():
     return "working"
 
 
+if __name__=='__main__':
+    app.run()
