@@ -12,7 +12,7 @@ app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
 
-@app.route("/", methods = ['POST'])
+@app.route("/", methods = ['POST','GET'])
 def index():
     client = request.form['clientname']
     service1 = request.form.get('servicelist')
@@ -94,6 +94,10 @@ background: #f0f5f9;">
 </body>'''.format(name=client,email=clientemail,service=service1,message=clientmessage)
     mail.send(msg)
     return redirect('https://www.hatsoffqatar.com',code=307)
+
+@app.route('/new')
+def new():
+    return "working"
 if __name__ == '__main__':
     app.run()
 
